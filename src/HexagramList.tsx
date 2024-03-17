@@ -27,6 +27,7 @@ export const HexagramList = ({ focus }) => {
   }
 
   return Array.from({ length: 64 }).map((_, index) => (
+    // index would exactly be the key, the content will never update
     <HexagramCell index={index} key={index}></HexagramCell>
   ));
 };
